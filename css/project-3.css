@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #091540 ;
+    --box-color:hsl(226, 25%, 17%);
+    --logo-color:hsl(0, 0%, 78%);
+    --hover-color:hsl(3, 71%, 56%);
+    --time-fast:0.3s;
+}
+html {
+    font-size: 16px;
+}
+body {
+        background-color:  var(--background-color) ;
+        font-family: "Work Sans", sans-serif;
+}
+main {
+    max-width: 1440px ;
+    margin: 0 auto;
+}
+/*.image {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    max-width: 60%;
+    max-height: 60%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}*/
+/*.image i {
+
+    max-width: 60%;
+    max-height: 60%;
+    height: auto;
+    object-fit: contain;
+}*/
+
+/* Start Header */
+.Header .container {
+    display: flex;
+    margin:20px auto;
+    background-color: var(--box-color);
+    width: 1140px;
+    height: 50px;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.Header .container .box {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(225, 23%, 24%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: var(--time-fast);
+}
+.Header .container .box i {
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+    object-fit: contain;
+    color: var(--logo-color);
+}
+.Header .container .logo i {
+    max-width: 70%;
+    max-height: 70%;
+    font-size: 150%;
+    object-fit: contain;
+    color: var(--logo-color) ;
+}
+.Header .container .box:hover {
+    width: 45px;
+    height: 45px;
+}
+/* End Header */
+/* ------------------------------------------------------------------------------------------- */
+/* Start Hero */
+.Hero .container {
+    display: flex;
+    margin:20px auto;
+    width: 1140px;
+    height: 50px;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.Hero .container h1 {
+    color: var(--logo-color);
+}
+.Hero .container .list {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+.Hero .container .list h5 {
+    background-color: var(--box-color);
+    color: var(--logo-color);
+    align-items: center;
+    border-radius: 12px;
+    max-width: 35%;
+    width: auto;
+    height: 25px;
+    padding: 5px;
+    transition: var(--time-fast);
+}
+.Hero .container .list h5:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    padding: 7px;
+}
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.data .container {
+    display: grid;
+    grid-template-columns: repeat(3, auto) ;
+    grid-template-rows:  repeat(4, auto-fit) ;
+    width: 1140px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px 5px;
+    padding: 0 20px;
+
+}
+.data .container .quiz {
+    display: flex;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    gap: 12px;
+    flex-direction: column;
+    box-shadow: 0 4px 10px #000;
+}
+.data .container .quiz .logo {
+    width: 40px;
+    height: 40px;
+    background:var(--box-color);
+    box-shadow: 0 4px 10px #000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.data .container .quiz  h2 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--logo-color);
+
+}
+.data .container .quiz p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--logo-color);
+
+}
+
+.data .container .quiz i {
+    color: var(--hover-color);
+    max-width: 60%;
+    max-height: 60%;
+    height: auto;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+.data .container .quiz .bottom {
+    background-color: var(--box-color);
+    width: 90px;
+    height:25px;
+    padding: 5px 0 0 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000;
+    transition: var(--time-fast);
+    color: var(--logo-color);
+
+}
+
+.data .container .quiz .bottom:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    width: 92px;
+    height: 27px;
+}
